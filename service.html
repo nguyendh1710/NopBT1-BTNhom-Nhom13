@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Trang Service</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!--câu lệnh giúp gắn cdn fontawesome là fa6-cdn-->
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--google font jost-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+   <!-- animate css  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css" integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--my css-->
+  <link href="service.css" rel="stylesheet">
+</head>
+<body id="myBody">
+  <!--header-->
+  <header id="header">
+    <div class="container">
+      <!--navbar-->
+      <div class="header_fix" id="cuon">
+        
+        <nav class="navbar navbar-expand-lg" >
+          
+            <!--logo-->
+            <a class="navbar-brand pt-3" id="brand" href="#">
+              <i class="fa-solid fa-align-right text-success fs-2 "></i>
+              <span class=" fs-2 fw-bold " >Corp Vision</span>
+              <p class=" text-center ps-4 fw-bold ">Vision to your Future</p>
+            </a>
+            
+            <!--nav-->
+            <button class="navbar-toggler  bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center me-5 pt-3" id="navbarNav">
+               <ul class="navbar-nav fw-bold">
+                <li class="nav-item me-1"> <!--  dùng me-3 chỉnh margin right cho các items cách nhau một chút vì các thẻ after dính sát nhau khi hover-->
+                  <a class="nav-link" href="./home.html">HOME</a>
+                </li>
+                <li class="nav-item me-1"> <!-- dùng me-3 chỉnh margin right cho các items cách nhau một chút vì các thẻ after dính sát nhau khi hover-->
+                  <a class="nav-link" href="./about.html">ABOUT</a>
+                </li>
+                <li class="nav-item me-1"> <!-- dùng me-3 chỉnh margin right cho các items cách nhau một chút vì các thẻ after dính sát nhau khi hover-->
+                  <a class="nav-link" href="#">SERVICES</a>
+                </li>
+                <div class="dropdown me-1">
+                  <button class="btn dropdown-toggle fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PAGES
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./blogposts1.html">BLOG POSTS</a></li>
+                    <li><a class="dropdown-item" href="./404page.html">404 PAGE</a></li>
+                    <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                    <li><a class="dropdown-item" href="#">ELEMENTS PAGE</a></li>
+                  </ul>
+
+                </div>
+                <li class="nav-item me-1"> <!-- dùng me-3 chỉnh margin right cho các items cách nhau một chút vì các thẻ after dính sát nhau khi hover-->
+                  <a class="nav-link" href="./contact.html">CONTACT</a>
+                </li>
+              </ul>
+              <!--search_theme-->
+            <div class="search_theme pt-3">
+              <!--search-->
+              <div class="search">
+                  <i class="fa fa-search icon-material-search text-white bg-success fs-5 text-center pt-3 "></i>
+              </div>
+              <!--dark_theme-->
+              <div class="container ">
+                  <div style="width: 18rem;" class="mx-auto py-3">
+                    <button class="btn" id="switchButton" onclick = "theme()" title="Click to switch theme">
+                       <i class="far fa-moon fs-5"></i>
+                       <i class="far fa-sun fs-5"></i>
+                    </button>
+            
+                  </div>
+              </div>
+            </div>
+           
+            </div>
+
+            
+            
+        </nav>
+       
+        <hr/>  
+
+       </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </header>
+  <!--main-->
+  <main>
+    <!--banner-->
+    <section >
+    
+    
+     
+          
+          <div class="banner">
+            <img src="./img/b1.jpg" class="d-block " alt="...">
+            <!--banner_text-->
+            <div class="banner_text pt-5">
+              <h2 class="pt-5 fw-bold">Services</h2>
+              <p class="">We work with bold brands that we believe in</p>
+              
+          </div>
+            
+          </div>
+     
+        
+        
+        </div>
+        
+      </div>
+ 
+    </section>
+    <!--service-->         
+    <section class="service py-5">
+      <div class="container position-relative">
+        <!-- service_title  -->
+        <div class="service_title text-center fw-bold">
+          <h6>CHECK OUR SERVICES</h6>
+          <p>Introduce our best and reliable services for <br/>all your business</p>
+        </div>
+
+        <!--service_content  -->
+        <div class="service_content">
+          <div class="container">
+            <div class="row gy-4 gx-4">
+              <!-- col  -->
+              <div class="col-lg-6">
+                <!-- item  -->
+                <div class="service_item  text-center ">
+                 
+                  
+
+                  <img src="./img/icon1.png" class="logo mt-5 " alt="...">
+                  <br/>
+                  <h3 class=" fw-bold fs-3 lh-1">Product Design</h3>
+                  <br/>
+                  <p>Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac sed, lacinia est. Quisque ut lectus, eros et, sed risus. Nullam sit amet laoreet elit.<br/> non init magnaa velit, dolor eget ex.</p>
+                  <br/>
+                  <button type="submit" class="btn btn-success mb-5 ">Know More</button>
+                  
+
+
+                </div>
+              </div>
+              <!-- col  -->
+              <div class="col-lg-6">
+                <!-- item  -->
+                <div class="service_item  text-center ">
+                  <img src="./img/s1.jpg" class="  " alt="...">
+                </div>
+              </div>
+              <!-- col  -->
+              <div class="col-lg-6 ">
+                <!-- item  -->
+                <div class="service_item text-center  ">
+                  <img src="./img/s2.jpg" class=" " alt="...">
+                  
+                  
+                 
+                </div>
+              </div>
+              <!-- col  -->
+              <div class="col-lg-6 ">
+                <!-- item  -->
+                <div class="service_item text-center  ">
+                  <img src="./img/icon2.png" class=" logo mt-5" alt="...">
+                  <br/>
+                  <h3 class=" fw-bold fs-3">E-commerce Design</h3>
+                  <br/>
+                  <p>Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac sed, lacinia est. Quisque ut lectus, eros et, sed risus. Nullam sit amet laoreet elit. <br/>non init magnaa velit, dolor eget ex.</p>
+                  <br/>
+                  <button type="submit" class="btn btn-success mb-5">Know More</button>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--solution-->
+    <section class="solution py-5">
+       <!-- solution_title  -->
+       <div class="solution_title text-center ">
+        <h6>BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS</h6>
+        <p>What industries we serve?</p>
+       </div>
+
+
+       <!-- solution_content  -->
+        
+          <div class="solution_content">
+            <div class="container">
+              <div class="row gy-4">
+                <!-- col  -->
+                <div class="col-sm-4  col-md-6 col-lg-4">
+                  <!-- item  -->
+                  <div class="solution_item  text-capitalize p-4 ">
+                   
+                    <i class="fa-solid fa-money-bill-1 fs-1 text-success pe-3"></i>
+                    <div class="text-capitalize">
+                       <h3 class=" fw-bold ">Investment Planning</h3>
+                       <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+                    
+                    </div>
+  
+  
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-sm-4  col-md-6 col-lg-4 ">
+                  <!-- item  -->
+                  <div class="solution_item  text-capitalize p-4 ">
+                   
+                    
+  
+                    <i class="fa-solid fa-file-text fs-1 text-success pe-3"></i>
+                    <div class="text-capitalize">
+                      <h3 class=" fw-bold">Investment Planning</h3>
+                      <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+                    </div>
+  
+  
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-sm-4  col-md-6 col-lg-4 ">
+                  <!-- item  -->
+                  <div class="solution_item  text-capitalize p-4 ">
+                   
+                    
+  
+                    <i class="fa-solid fa-building fs-1 text-success pe-3"></i>
+                    <div class="text-capitalize">
+                       <h3 class=" fw-bold">Commercial Projects</h3>
+                       <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+                    </div>
+  
+  
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-sm-4  col-md-6 col-lg-4 ">
+                  <!-- item  -->
+                  <div class="solution_item  text-capitalize p-4 ">
+                   
+                    
+  
+                    <i class="fa-solid fa-clone fs-1 text-success pe-3"></i>
+                    <div class="text-capitalize">
+                       <h3 class=" fw-bold">Banking & Finance</h3>
+                       <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+                    </div>
+  
+  
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-sm-4  col-md-6 col-lg-4 ">
+                  <!-- item  -->
+                  <div class="solution_item  text-capitalize p-4 ">
+                   
+                    
+  
+                    <i class="fa-solid fa-code fs-1 text-success pe-3"></i>
+                    <div class="text-capitalize">
+                      <h3 class=" fw-bold ">Competitive Research</h3>
+                      <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+                    </div>
+  
+  
+                  </div>
+                </div>
+                <!-- col  -->
+                <div class="col-sm-4 col-md-6 col-lg-4 ">
+                       <!-- item  -->
+                      <div class="solution_item  text-capitalize p-4 ">
+                   
+                    
+  
+                         <i class="fa-solid fa-bar-chart fs-1 text-success pe-3"></i>
+                         <div class="text-capitalize">
+                            <h3 class=" fw-bold">International Business</h3>
+                            <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+                       </div>
+  
+                
+                
+                
+                
+                 </div>
+              
+                </div>
+                
+              
+              </div>
+            </div>
+          </div>
+   
+   
+   
+   
+   
+   
+    </section>
+     <!--innovative-->
+     <section class="innovative py-5">
+
+          <!-- innovative_content  -->
+        
+          <div class="innovative_content">
+            <div class="container">
+              <div class="row gy-4">
+                <!-- col  -->
+                <div class=" col-sm-12 col-md-12 col-lg-6 ">
+                  <!-- item  -->
+                  <div class="innovative_item text-capitalize p-2 ">
+                   
+                    
+                    <div class=" innovative_item_title text-capitalize">
+                       <h6 class=" ">INNOVATIVE TECHNOLOGY</h6>
+                       <p>We use latest technologies that are proven and practical</p>
+                    </div>
+
+
+                    <div class=" innovative_item_text text-capitalize">
+                      <i class="fa-solid fa-map fs-1 text-white pe-4"></i>
+                      <div class="text-capitalize">
+                        <h3 class=" fw-bold">Our Location:</h3>
+                        <p>Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
+                      </div>
+                    </div>
+                    
+                    <hr/>
+                    <br/>
+                    <div class=" innovative_item_text text-capitalize">
+                      <i class="fa-solid fa-phone fs-2 text-white pe-4"></i>
+                      <div class="text-capitalize">
+                        <h3 class=" fw-bold">Phone Numbers</h3>
+                        <p>+142 5897555, +142 5897566</p>
+                      </div>
+                    </div>
+                    
+                    <hr/>
+                    <br/>
+                    <div class=" innovative_item_text text-capitalize">
+                      <i class="fa-solid fa-envelope fs-1 text-white pe-4"></i>
+                      <div class="text-capitalize">
+                        <h3 class=" fw-bold">Email Addresses</h3>
+                        <p>mail@company1.com, mail@company2.com</p>
+                      </div>
+                    </div>
+
+                      
+                     
+
+
+
+
+
+                  </div>
+  
+  
+                  
+                </div>
+                <!-- col  -->
+                <div class="col-sm-12 col-md-12 col-lg-6 ">
+                  <!-- item  -->
+                  <div class="innovative_item_form bg-white text-capitalize pt-4  pb-4 ps-4 pe-4 ">
+                    <!-- innovative_form  -->
+                    <div class=" innovative_form">
+                       <!-- innovative_form_title  -->
+                       <div class=" innovative_form_title text-capitalize">
+                         <h3 class=" pt-5 fw-bold">Lets talk about your project</h3>
+                         <p>We have made it easy for clients to reach us and get their solutions weaved</p>
+                       </div>
+  
+                       <!-- innovative_form_text  -->
+                       <div class="innovative_form_text pb-5">
+                        <form class="row g-3">
+                            <div class="col-12">
+                                
+                                <input type="text" class="form-control" id="inputCity" placeholder="Name">
+                             </div>
+        
+                             <div class="col-12 ">
+          
+                                <input type="text" class="form-control" id="inputCity" placeholder="Email*">
+                            </div>
+
+                           <div class="col-12">
+                                <textarea class="form-control" id="inputCity" placeholder="Message*" style="height: 100px" ></textarea>
+          
+         
+                           </div>
+        
+                           <div class="col-12">
+                               <button type="submit" class="btn btn-success fw-bold "> Get Started</button>
+                           </div>
+                        </form>
+                       </div> 
+                    </div>
+                    
+                    
+      
+                
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+     </section>
+     <!--crafted-->
+    <section class="crafted py-5">
+      <!-- crafted_title  -->
+      <div class="crafted_title text-center ">
+       <h6>BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS</h6>
+       <p>Services that create identities, build brands,<br/> and get results</p>
+      </div>
+
+
+      <!-- crafted_content  -->
+       
+         <div class="crafted_content">
+           <div class="container">
+             <div class="row ">
+               <!-- col  -->
+               <div class="col-sm-12  col-md-6 col-lg-4">
+                 <!-- item  -->
+                 <div class="crafted_item  text-center p-1 ">
+                  
+                    <img src="./img/icon1.png" class="logo mt-3 " alt="...">
+                    <br/>
+                    <br/>
+                    <div class="crafted_item_text">
+                      <h3 class=" fw-bold fs-3">Business Analysis</h3>
+                   
+                      <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex fermentum.</p>
+                    </div>
+                 </div>
+ 
+ 
+                 
+               </div>
+               <!-- col  -->
+               <div class="col-sm-12  col-md-6 col-lg-4 ">
+                 <!-- item  -->
+                 <div class="crafted_item  text-center p-1 ">
+                  
+                   
+ 
+                    <img src="./img/icon2.png" class=" logo mt-3" alt="...">
+                    <br/>
+                    <br/>
+                    <div class="crafted_item_text">
+                      <h3 class=" fw-bold fs-3">Project Reporting</h3>
+                    
+                      <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex fermentum.</p>
+                    </div>
+ 
+                 </div>
+               </div>
+               <!-- col  -->
+               <div class="col-sm-12  col-md-6 col-lg-4 ">
+                <!-- item  -->
+                <div class="crafted_item  text-center p-1 ">
+                 
+                  
+
+                    <img src="./img/icon3.png" class=" logo mt-3" alt="...">
+                    <br/>
+                    <br/>
+                    <div class="crafted_item_text">
+                      <h3 class=" fw-bold">Security Enhanced </h3>
+                    
+                      <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex fermentum.</p>
+                    </div>
+
+
+                </div>
+               </div>
+               
+               
+               
+               
+             </div>
+             
+               
+               
+             
+             
+           </div>
+         </div>
+  
+  
+  
+  
+  
+  
+    </section>
+     <!--contact_info-->
+     <section class="contact_info py-5">
+      <div class="container position-relative">
+        <!-- contact_content  -->
+        
+          <div class="contact_content">
+            <div class="row">
+              <!-- col  -->
+              <div class="col-sm-12 col-md-6 col-lg-3 ">
+                <!-- item  -->
+                <div class="contact_item  text-capitalize pt-3 pb-3 pe-5 ">
+                  <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-align-right text-success fs-3 "></i>
+                    <span class="text-white fs-2 fw-bold ">Corp Vision</span>
+                    <p class=" text-white text-start ps-5">Vision to your Future</p>
+                  </a>
+                  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quia debitis culpa porro quis! Autem molestias dolor earum temporibus sint!</p>
+                  <a href="#"><i class="fa-brands fa-facebook-f pe-3"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter pe-3"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram pe-3"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in pe-3"></i></a>
+
+                
+                </div>
+              </div>
+              <!-- col  -->
+              <div class=" col-sm-12 col-md-6 col-lg-3 ">
+                <!-- item  -->
+                <div class="contact_item  text-capitalize pt-3 pb-3 pe-5">
+                  
+                    <h3 class="text-white fs-4">CONTACT INFO</h3>
+                    <br/>
+                    <p class="  text-start">Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
+                    <p class="  text-start">Phone Number : <a href="#">+1(21) 234 4567</a> </p>
+                    <p class="  text-start">Email : <a href="#">info@example.com</a></p>
+                    <p class=" text-start">Support :<a href="#">info@support.com</a> </p>
+
+
+
+
+                </div>
+              </div>
+              <!-- col  -->
+              <div class=" col-sm-12 col-md-6 col-lg-3  ">
+                <!-- item  -->
+                <div class="contact_item text-capitalize pt-3 pb-3 ps-5 ">
+                  <h3 class="text-white fs-4 ">CATEGORIES</h3>
+                  <br/>
+                  <p class="  text-start"><a href="#">Marketing Strategy</a></p>
+                  <p class="  text-start"><a href="#">Startup Business</a></p>
+                  <p class="  text-start"><a href="#">Web development</a></p>
+                  
+                </div>
+              </div>
+              <!-- col  -->
+              <div class="col-sm-12 col-md-6 col-lg-3  ">
+                <!-- item  -->
+                <div class="contact_item text-capitalize pt-3 pb-3  ">
+                  <h3 class="text-white fs-4  ">META</h3>
+                  <br/>
+                  <p class="  text-start"><a href="#">Log in</a></p>
+                  <p class="  text-start"><a href="#">Entries feed</a></p>
+                  <p class="  text-start"><a href="#">Comments feed</a></p>
+                  <p class="  text-start"><a href="#">WordPress.org</a></p>
+                </div>
+              </div>
+              
+          </div>
+        
+         </div>
+      </div>
+      <hr/>
+    </section>
+    <!--back_to_top-->
+    <section class="back-to" id="back-to-top">
+      <a href="#header">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </section>
+  </main>
+  <!--footer-->
+  <footer class=" text-center ">
+    
+    <p class="pb-5">© 2023  Corp Vision  All Rights Reserved | WordPress Theme by  <a href="#"> W3Layouts. </a></p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <!-- wowjs  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- search  -->
+
+  <script src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/js/bootstrap.min.js"></script>
+
+  <script src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/js/navigation.js?ver=1.0.0" id="w3layouts-navigation-js"></script>
+  
+ 
+  <!-- myjs  -->
+   <script src="service.js">
+    
+  </script>
+</body>
+
+</html>
