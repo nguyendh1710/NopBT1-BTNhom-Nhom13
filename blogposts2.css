@@ -1,0 +1,426 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif; /* css của google font jost */
+  }
+  html,body{
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+/*header*/
+  
+
+header .header_fix{
+  position: fixed;
+  margin-left: -20px;
+  
+  
+
+}
+header .navbar-brand {
+  
+  padding-right: 120px;
+  padding-left: 100px;
+}
+
+header .navbar-nav {
+  
+    
+  padding-right: 80px;
+
+}
+header .navbar {
+  
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+
+
+header .navbar-brand p{
+  
+    font-size: 14px;
+    
+}
+
+header .navbar-brand span{
+
+  line-height: 1px;
+}
+  header .navbar-nav .nav-item a{
+
+    color: #BDC0C4;
+
+}
+
+header .navbar-collapse button{
+    color: #BDC0C4;
+    transition: 0.5s all;
+}
+
+header .navbar-collapse .dropdown button:hover{
+    color: white;
+}
+
+header .navbar  .search_theme{
+
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 100px;
+}
+ 
+header .navbar-nav a .nav-link{
+  
+    
+    transition: all 0.5s; /* chỉnh transition cho hiệu ứng hover chữ bên dưới được mượt mà*/
+  
+}
+    
+header .nav-item .nav-link:hover{
+  
+    width: 100%;
+    color:white;
+  
+}
+header .nav-item .dropdown button{
+  
+    
+  transition: all 0.5s; /* chỉnh transition cho hiệu ứng hover chữ bên dưới được mượt mà*/
+
+}
+header .nav-item .dropdown button:hover{
+  
+    width: 100%;
+    color:white;
+  
+}
+      
+  
+header .search .fa{
+
+       width: 50px;
+       height: 50px;
+       border-radius: 50%;
+
+}
+  
+  /* chỉnh cho header nằm dầu tiên mà dưới background-->dùng position ở phần heder mà không có relative thì header sẽ tự nhận body làm cha + dùng z-index:999*/
+header{
+  
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 999;
+    
+}
+
+header hr{
+  color: #BDC0C4;
+    margin-top: 20px;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid;
+    opacity: 0.25;
+}
+
+header .navbar-collapse{
+  margin-left: 100px;
+}
+
+/*main*/
+/*banner*/
+
+  
+.navbar .navbar-expand-lg {
+  
+  
+    position: relative;
+    height: 100%; /* chỉnh cho chiều cao của item bằng div cha inner để mấy cái nút ảnh nó không lọt xuống khi hiển thị*/
+  }
+
+  .navbar button .navbar-toggler {
+
+    background-color: #009F4D;
+    color:white;
+  }
+  main .banner .banner_text{
+  
+  
+    position: absolute;
+    top:0;        /* muốn dùng position: absolute thì phải ít nhất co top va left để xác định vị trí thằng con so với thằng cha*/
+    left: 0;      /* muốn dùng position: absolute thì phải ít nhất co top va left để xác định vị trí thằng con so với thằng cha*/
+    width: 100%;  /* muốn dùng display:flex thì phải co chiều rộng và chiều cao nên phải cho width và height*/
+    height: 60vh; /* muốn dùng display:flex thì phải co chiều rộng và chiều cao nên phải cho width và height*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(75, 100, 117, 0.5); /* làm mờ cho ảnh của item--> đây là cách 2 thay thế việc phải dùng div overlay */
+    
+  }
+
+ main .banner .banner_text h2{
+
+  font-size: 50px;
+
+
+ }
+ main .banner .banner_text p{
+
+  font-size: 20px;
+  color: #B9B8B7;
+
+
+ }
+  .banner img{
+     width: 100%;
+     height: 100%; /* chỉnh height:100% cho cái ảnh co lại bằng item để không vỡ layout*/
+     object-fit: cover;
+  }
+  
+  main .banner {
+  
+  
+    
+    height: 60vh; /* muốn dùng display:flex thì phải co chiều rộng và chiều cao nên phải cho width và height*/
+    
+  }
+/* project  */
+.project_content .project_item img {
+  /* border-top-left-radius: ;
+  border-top-right-radius: ; */
+  /* khi border-radius nhận vào 4 giá trị thì sẽ tương ứng lần lượt với: top-left, top-right, bottom-right và bottom-left */
+  border-radius: 12px 12px 0 0;
+}
+
+.project_content .project_item img{
+  
+  cursor: pointer;
+}
+
+
+.project_content .project_item .project_text h5 {
+  color:rgb(63 58 100);
+  transition: all 0.5s;
+}
+.project_content .project_item .project_text h5:hover {
+  color:#009E4D;
+ 
+}
+.project_content .project_item .project_text p {
+  color:#C4C4C4;
+  
+}
+
+
+
+.project_content .project_item .project_text {
+  transition: all 0.5s;
+  
+ 
+}
+
+.project_content .project_item .project_text:hover {
+  border-color: green;
+ 
+}
+.project_content li a {
+  border-radius: 0% !important;
+  color:#7A818A;
+  
+}
+.project_content li a {
+  transition: all 0.5s;
+}
+.project_content li a:hover {
+  color:white !important;
+  background-color: #009E4D !important;
+}
+.project_content .pagination  .active a{
+  
+  background-color: #009E4D !important;
+}
+.project_content .project_item .project_text .w3layout{
+  padding-right: 55px;
+  font-size: 16px;
+  color:rgb(63 58 100) ;
+  transition: all 0.5s;
+}
+.project_content .project_item .project_text .w3layout:hover{
+ 
+  color:#009E4D ;
+  
+}
+.project_content .project_item .project_text .by{
+  font-size: 15px;
+  color:#B2B2B2 ;
+
+}
+.project_content .project_item .project_text .date{
+  font-size: 15px;
+  color:#B2B2B2 ;
+}
+
+/*contact_info*/
+
+.contact_info{
+
+  height: 60vh;
+ background-color: #151421 !important;
+}
+.contact_info .contact_item .navbar-brand span{
+
+  line-height: 5px;
+}
+.contact_info .contact_item .navbar-brand p{
+
+  font-size: 14px;
+}
+.contact_info .contact_content{
+
+  width: 100vw;
+}
+.contact_info .contact_content .contact_item p{
+
+  color:#717780 ;
+}
+.contact_info .contact_content .contact_item p a{
+  text-decoration: none;
+  transition: all 0.5s;
+  color:#717780 ;
+}
+.contact_info .contact_content .contact_item p a:hover{
+
+  color:white ;
+}
+.contact_info .contact_content .contact_item a i{
+  text-decoration: none;
+  transition: all 0.5s;
+  color:#717780 ;
+}
+.contact_info .contact_content .contact_item a i:hover{
+
+  color:white ;
+}
+.contact_info hr{
+
+  color:#717780 ;
+  font-size: 2px;
+}
+
+/*footer*/
+footer{
+ 
+ background-color: #151421;
+ color:#717780 ;
+ overflow: hidden;
+}
+footer a{
+  text-decoration: none;
+  
+  color: green;
+  transition: all 0.5s;
+  
+ }
+footer  a:hover{
+  color:white;
+ 
+ }
+
+/*footer*/
+/* Ẩn/Hiện back-to-top*/
+
+.back-to{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:#009F4D;
+  width:50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  
+
+}
+.back-to a{
+   display:inline-block;
+   width: 100%;
+   height: 100%;
+   color: white;
+}
+/*search_theme*/
+/* Light theme */
+#myBody {
+  background-color: white;
+}
+
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* Dark Theme*/
+.dark {
+  background-color: black !important;
+
+}
+
+
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+/* hieu ung phong to anh khi re chuot qua*/
+/* Khung chứa thumbnail */
+.thumbnail {
+  width: 300px;
+  height: 200px; 
+  overflow: hidden; 
+  
+}
+
+/* Thumbnail */
+.thumbnail img {
+  width: 100%; 
+  height: 100%;  
+  transition-duration: 0.5s;
+      /* Safari & Google Chrome */
+      -webkit-transition-duration: 0.5s; 
+      /* Mozilla Firefox */
+      -moz-transition-duration: 0.5s; 
+      /* Opera */
+      -o-transition-duration: 0.5s;
+      /* IE 9 */
+      -ms-transition-duration: 0.5s;
+}
+       
+/* Hover chuột vào thumbnail */
+.thumbnail img:hover {
+  transform: scale(1.2);
+      /* Safari & Google Chrome */
+      -webkit-transform: scale(1.2);
+      /* Mozilla Firefox */
+      -moz-transform: scale(1.2); 
+      /* Opera */
+      -o-transform: scale(1.2);
+      /* IE 9 */
+      -ms-transform: scale(1.2);
+  cursor: pointer; 
+}
+
+
+
+
+
